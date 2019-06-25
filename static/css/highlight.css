@@ -92,7 +92,7 @@
 }
 
 .hljs-number {
-  color:#77bcd7;
+  color: #77bcd7;
 }
 
 .coffeescript .javascript,
@@ -104,4 +104,3 @@
 .xml .hljs-cdata {
   opacity: 0.7;
 }
-
