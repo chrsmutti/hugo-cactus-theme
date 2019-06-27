@@ -13,18 +13,15 @@
 {{ hugo.Generator }}
 <title>{{ .Title }}{{ if .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
 <link rel="shortcut icon" href="{{ "favicon.png" | absURL }}" /> <link
-rel="stylesheet" href="{{ "css/style.css" | absURL }}" async /> <link
-rel="stylesheet" href="{{ "css/highlight.css" | absURL }}" async />
+rel="stylesheet" href="{{ "css/main.css" | absURL }}" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+/>
 
 {{ range.Site.Params.customCSS }}
 <link rel="stylesheet" href="{{ . | absURL }}" />
 {{ end }}
-
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-  async
-/>
 
 {{ if .Site.Params.enableRSS }}
 <link

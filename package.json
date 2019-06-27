@@ -1,0 +1,15 @@
+{
+  "name": "cactus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chrsmutti/hugo-cactus-theme.git",
+  "author": "Christian Mutti <chrsmutti@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "build": "yarn build:scss",
+    "build:scss": "node-sass --output-style compressed -o static/css src/scss/main.scss"
+  }
+}
